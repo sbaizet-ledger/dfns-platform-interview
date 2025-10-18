@@ -2,7 +2,7 @@ variable "environment" {
   description = "Environment on which this module is deployed"
   type    = string
   validation {
-    condition     = can(regex("^(production|development)$", var.environment))
+    condition     = can(regex("^(production|staging|development)$", var.environment))
     error_message = "The environment value isn't correct. Accepted values are production, development"
   }
 }
