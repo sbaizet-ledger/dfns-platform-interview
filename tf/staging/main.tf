@@ -1,7 +1,7 @@
 module "vault" {
   source = "../modules/vault"
   environment = "staging"
-  vagrant_network = "staging"
+  vagrant_network = "vagrant_staging"
   services = {
     account = {
     db_password = "396e73e7-34d5-4b0a-ae1b-b128aa7f1234"

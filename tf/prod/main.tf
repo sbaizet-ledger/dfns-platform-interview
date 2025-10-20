@@ -1,6 +1,6 @@
 module "vault" {
   source = "../modules/vault"
-  environment = "production"
+  environment = "vagrant_production"
   vagrant_network = "prod"
   services = {
     account = {
