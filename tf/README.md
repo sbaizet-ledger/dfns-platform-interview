@@ -51,3 +51,8 @@ https://www.runatlantis.io/
 ## Extra
 An extra CI could be added to detect potential code drift, for instance if someone changed something manually on the 
 cloud but not by code.
+
+# Secret management
+Another topic not treated on this exercise would be the secret management.
+The secrets like db_password are in clear text in the code, this is obviously not production ready.
+The use of a tool like Secret Manager on AWS could help removing the secrets from the code.
