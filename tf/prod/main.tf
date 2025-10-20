@@ -1,5 +1,5 @@
 module "vault" {
-  source = "../modules/vault"
+  source = "../modules/dnfs-app"
   environment = "vagrant_production"
   vagrant_network = "prod"
   services = {
